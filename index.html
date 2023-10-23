@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+  </head>
+  <body>
+    <main>
+      <!-- This is the main div container -->
+      <section id="main-content-container">
+        <!-- container with blue background -->
+        <div id="blue-background-container">
+          <p>Your Result</p>
+          <div id="total-score">
+            <h2>76</h2>
+            <p>of 100</p>
+          </div>
+
+          <div id="complimentary-message">
+            <h2>Great</h2>
+            <p>
+              You scored higher than 65% of the people who have taken these
+              tests
+            </p>
+          </div>
+        </div>
+        <!-- ****************************** -->
+
+        <!-- container with white background -->
+        <div id="white-background-container">
+          <h2>Summary</h2>
+          <section id="summary-score-container">
+            <!-- reaction container -->
+            <div class="reaction-bg summary-score">
+              <div id="reaction">
+                <img src="./assets/images/icon-reaction.svg" alt="" srcset="" />
+                <p>Reaction</p>
+              </div>
+              <div>
+                <span class="score">80</span>
+                <span class="total">/100</span>
+              </div>
+            </div>
+            <!-- ************************* -->
+
+            <!-- Memory container -->
+            <div class="memory-bg summary-score">
+              <div id="memory">
+                <img src="./assets/images/icon-memory.svg" alt="" srcset="" />
+                <p>Memory</p>
+              </div>
+              <div>
+                <span class="score">92</span>
+                <span class="total">/100</span>
+              </div>
+            </div>
+            <!-- ************************* -->
+
+            <!-- Verbal container -->
+            <div class="verbal-bg summary-score">
+              <div id="verbal">
+                <img src="./assets/images/icon-verbal.svg" alt="" srcset="" />
+                <p>Verbal</p>
+              </div>
+              <div>
+                <span class="score">61</span>
+                <span class="total">/100</span>
+              </div>
+            </div>
+            <!-- ***************************** -->
+
+            <!-- Visual container -->
+            <div class="visual-bg summary-score">
+              <div id="visual">
+                <img src="./assets/images/icon-visual.svg" alt="" srcset="" />
+                <p>Visual</p>
+              </div>
+              <div>
+                <span class="score">72</span>
+                <span class="total">/100</span>
+              </div>
+            </div>
+
+            <!-- **************************** -->
+          </section>
+          <button id="continue-button" type="button">Continue</button>
+        </div>
+
+        <!-- ****************************** -->
+
+        <!-- ******************************** -->
+      </section>
+      <!-- ***************************** -->
+    </main>
+  </body>
+</html>

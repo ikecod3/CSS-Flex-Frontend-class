@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: HankenGrotesk;
+}
+@font-face {
+  font-family: HankenGrotesk;
+  src: url(/assets/fonts/static/HankenGrotesk-Medium.ttf);
+}
+
+main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+p {
+  font-size: 18px;
+}
+
+#main-content-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+@media screen and (min-width: 840px) {
+  #main-content-container {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    flex-direction: row;
+  }
+}
+
+#blue-background-container {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 0 0 20px 20px;
+  padding: 20px;
+  font-family: HankenGrotesk;
+  display: grid;
+  place-items: center;
+}
+@media screen and (min-width: 840px) {
+  #blue-background-container {
+    max-width: 350px;
+    width: 100%;
+    border-radius: 20px;
+  }
+}
+
+#blue-background-container > p {
+  color: white;
+  font-weight: 700;
+}
+#total-score {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+#total-score h2 {
+  font-size: 50px;
+  color: hsl(241, 100%, 89%);
+}
+#total-score p {
+  color: hsla(240, 23%, 70%, 0.368);
+  font-weight: bold;
+}
+
+#complimentary-message {
+  text-align: center;
+  color: hsl(241, 100%, 89%);
+}
+#complimentary-message h2 {
+  margin-bottom: 10px;
+}
+#complimentary-message p {
+  color: white;
+}
+
+/* white background container styling */
+#white-background-container {
+  padding-inline: 20px;
+}
+
+@media screen and (min-width: 840px) {
+  #white-background-container {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 25px;
+  }
+}
+
+#white-background-container > p {
+  font-weight: 700;
+}
+#summary-score-container {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+.summary-score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid #000; */
+  padding: 25px 15px;
+  border-radius: 8px;
+}
+
+#reaction,
+#memory,
+#verbal,
+#visual {
+  display: flex;
+  column-gap: 10px;
+  font-weight: 700;
+}
+#reaction {
+  color: hsla(0, 100%, 67%);
+}
+.reaction-bg {
+  background-color: hsla(0, 100%, 67%, 0.05);
+}
+#memory {
+  color: hsl(39, 100%, 56%);
+}
+.memory-bg {
+  background-color: hsla(39, 100%, 56%, 0.05);
+}
+#verbal {
+  color: hsl(166, 100%, 37%);
+}
+.verbal-bg {
+  background-color: hsla(166, 100%, 37%, 0.05);
+}
+#visual {
+  color: hsl(234, 85%, 45%);
+}
+.visual-bg {
+  background-color: hsla(234, 85%, 45%, 0.05);
+}
+
+.score,
+.total {
+  font-weight: 700;
+  font-size: larger;
+}
+.score {
+  color: #000;
+}
+.total {
+  color: hsla(240, 23%, 70%, 0.564);
+}
+
+/* styling button */
+button {
+  border-radius: 30px;
+  width: 100%;
+  background-color: hsl(224, 30%, 27%);
+  padding: 15px 0;
+  color: #fff;
+  font-weight: 800;
+  font-size: x-large;
+}
+#continue-button:hover {
+  background-color: hsl(241, 81%, 54%);
+  cursor: pointer;
+}
